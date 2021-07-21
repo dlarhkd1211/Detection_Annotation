@@ -82,7 +82,7 @@ def nametxt(path, img_format):
 
 def main():
   parser = argparse.ArgumentParser(description="This script support converting yolo format to voc format xml")
-  parser.add_argument('--path', type=str, default=None, help = 'path to image of yolo format')
+  parser.add_argument('--path', type=str, default=None, help = 'path of image with yolo format')
   parser.add_argument('--img-format', type=str, default='jpg', help = 'jpg or png')
   args = parser.parse_args()
   yolo2voc(args.path, args.img_format)
