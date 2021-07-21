@@ -34,7 +34,7 @@ def voc2yolo(path):
 
 def main():
   parser = argparse.ArgumentParser(description="This script support converting voc format xml to yolo format")
-  parser.add_argument('--path', type=str, default=None, help = 'path of images with yolo format')
+  parser.add_argument('--path', type=str, default=None, help = 'path of images with voc format')
   args = parser.parse_args()
   voc2yolo(args.path)
 
